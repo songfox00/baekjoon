@@ -27,7 +27,6 @@ int dfs(int i, int j) {
 }
 
 int main() {
-
 	cin >> n;
 
 	for (int i = 1; i <= n; i++) {
