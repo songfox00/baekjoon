@@ -20,7 +20,7 @@ int main() {
 	sort(v.begin(), v.end());
 
 	a = 0, b = 0;
-	for (int i = 1; i < v.size(); i++) {
+	for (int i = 0; i < v.size(); i++) {
 		if (v[i].second >= a) {
 			b++;
 			a = v[i].first;
