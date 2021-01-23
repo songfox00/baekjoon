@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int gate[100001] = { 0, };
+int gate[100001];
 
 int plane(int x) {
 	if (gate[x] < 0)
