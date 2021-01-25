@@ -15,4 +15,5 @@ int main() {
 		dp[i] = dp[i - 1] + dp[i - 2];
 	}
 	cout << dp[n];
+	return 0;
 }
