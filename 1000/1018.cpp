@@ -35,5 +35,5 @@ int main(){
             ans=min({ans, num1, num2});
         }
     }
-    cout<<ans;
+    cout<<ans<<'\n';
 }
