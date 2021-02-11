@@ -40,4 +40,5 @@ int main() {
 			res++;
 	}
 	cout << res;
+    return 0;
 }
