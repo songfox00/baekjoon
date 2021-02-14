@@ -44,4 +44,5 @@ int main() {
 		else
 			cout << dist[i]<<'\n';
 	}
+	return 0;
 }
