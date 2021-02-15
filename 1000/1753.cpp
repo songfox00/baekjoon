@@ -16,7 +16,6 @@ vector<pair<ll, ll>>v[n_];
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0), cout.tie(0);
-
 	cin >> V >> e>>k;
 	while (e--) {
 		ll a, b, c;
