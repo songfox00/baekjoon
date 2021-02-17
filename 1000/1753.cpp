@@ -2,13 +2,14 @@
 #include<queue>
 #include<vector>
 #include<functional>
+#include<cstring>
 
 #define INF 987654321
 
 using namespace std;
 using ll = long long;
 
-priority_queue<pair<ll,ll>, vector<pair<ll,ll>>, greater<> >pq;
+priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<> >pq;
 const ll n_ = 20202, inf = 1e18;
 ll V, e, k, dist[n_];
 vector<pair<ll, ll>>v[n_];
@@ -16,13 +17,13 @@ vector<pair<ll, ll>>v[n_];
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0), cout.tie(0);
-	cin >> V >> e>>k;
+	cin >> V >> e >> k;
 	while (e--) {
 		ll a, b, c;
 		cin >> a >> b >> c;
 		v[a].push_back({ b,c });
 	}
-	fill(dist, dist + V + 1, inf);
+	fill(dist, dist + V + 1, INF);
 	dist[k] = 0;
 	pq.push({ 0,k });
 	while (pq.size()) {
@@ -39,9 +40,9 @@ int main() {
 	}
 	for (int i = 1; i <= V; i++) {
 		if (dist[i] == INF)
-			cout << "INF"<< '\n';
+			cout << "INF" << '\n';
 		else
-			cout << dist[i]<<'\n';
+			cout << dist[i] << '\n';
 	}
 	return 0;
 }
