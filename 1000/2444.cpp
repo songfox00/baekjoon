@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-//별 찍기 - 7
+
 int main()
 {
 	ios::sync_with_stdio(false);
