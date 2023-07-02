@@ -2,7 +2,7 @@
 #include <queue>
 
 using namespace std;
-//카드2
+
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
