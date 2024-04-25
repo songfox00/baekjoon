@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+
+	int N;
+
+	cin >> N;
+	if (N == 0 || N == 2 || N == 3 || N == 5 || N == 6 || N == 7 || N == 8 || N == 9) {
+		cout << " * * *";
+	}
+	cout << '\n';
+	for (int i = 0; i < 3; i++) {
+		if (N == 0 || N == 4 || N == 8 || N == 9) cout << "*     *";
+		else if (N == 5 || N == 6) cout << "*";
+		else cout << "      *";
+		cout << '\n';
+	}
+	if (N == 2 || N == 3 || N == 4 || N == 5 || N == 6 || N == 8 || N == 9) cout << " * * *";
+	cout << '\n';
+	for (int i = 0; i < 3; i++) {
+		if (N == 0 || N == 6 || N == 8) cout << "*     *";
+		else if (N == 1 || N == 3 || N == 4 || N == 5 || N == 7 || N == 9) cout << "      *";
+		else cout << "*";
+		cout << '\n';
+	}
+	if (N == 0 || N == 2 || N == 3 || N == 5 || N == 6 || N == 8 || N == 9) cout << " * * *";
+	cout << '\n';
+
+	return 0;
+}
