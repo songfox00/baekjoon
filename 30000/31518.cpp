@@ -3,21 +3,22 @@
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     int n;
     cin >> n;
 
-    bool good = true;
+    bool good=true;
+    
     for (int i = 0; i < 3; i++) {
-        bool has7 = false;
+        bool check = false;
         for (int j = 0; j < n; j++) {
-            int d;
-            cin >> d;
-            if (d == 7) has7 = true;
+            int a;
+            cin >> a;
+            if (a == 7) 
+                check = true;
         }
-        if (!has7) good = false;
+
+        if (!check) 
+            good = false;
     }
 
     cout << (good ? 777 : 0) << "\n";
