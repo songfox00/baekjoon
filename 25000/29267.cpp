@@ -9,7 +9,7 @@ int main() {
 	
 	for(int i=0;i<n;i++){
 		cin>>str;
-		
+		 
 		if(str=="save")
 			saveCnt=curCnt;
 		else if(str=="load")
