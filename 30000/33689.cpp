@@ -4,9 +4,9 @@ using namespace std;
 
 int main() {
 	int n, res=0;
-	cin>>n;
-	
 	string str;
+
+	cin>>n;
 	
 	while(n--){
 		cin>>str;
